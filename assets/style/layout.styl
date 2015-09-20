@@ -1,0 +1,70 @@
+@require 'assets/style/lib'
+
+@import 'https://fonts.googleapis.com/css?family=Vollkorn|Prata'
+
+html, body
+	height 100%
+	margin 0
+	font-text()
+a
+	color #004
+	font-weight bold
+	text-decoration none
+
+aside
+	color #8
+	&::before
+		content '('
+	&::after
+		content ')'
+
+body
+	a = #cde	//#345
+	b = #c8d8e8	//#384858
+	stripe-size = 1rem
+	background repeating-linear-gradient(
+		0deg,
+		a, a stripe-size,
+		b stripe-size, b (stripe-size * 2))
+
+body > header
+	text-align center
+	margin-bottom 1em
+
+	nav
+		display inline-block
+		margin-left auto
+		margin-right auto
+		background #fff
+		border-radius-bottom 1em
+
+		a
+			font-head()
+			margin 0 1em
+
+		.fa
+			font-size 135%
+			margin 0
+
+main
+	margin 0 1em
+
+	header
+		font-head()
+		color #008
+
+	section
+		margin-top 2em
+		max-width 800px
+		margin-left auto
+		margin-right auto
+
+		> header
+			font-size 125%
+
+		background #f
+		padding 0.5em 1em
+		border-radius-bottom 2em
+
+		&:first-child
+			margin-top 0

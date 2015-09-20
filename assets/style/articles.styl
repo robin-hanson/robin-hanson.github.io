@@ -1,0 +1,29 @@
+@require 'assets/style/lib'
+
+.article
+	margin 1em 0
+
+	.title
+		display block
+		font-head()
+
+	.publisher
+		font-style italic
+
+		.pages
+			margin-left 1em
+			display inline-block
+			color #444
+
+			&::before
+				content 'pp. '
+
+	.editor
+		color #4
+
+		&::before
+			content 'edited by:'
+			margin-right 1em
+
+	time
+		color #4

@@ -1,0 +1,125 @@
+extends layout
+block head
+	title The Age of Em, A Book
+	link(rel='stylesheet' type='text/css' href='style/index.css')
+block content
+	img#cover(src='cover.jpg' alt='Cover Image')
+	#publisher
+		a(href='https://www.ox.ac.uk') Oxford University Press
+		= ', '
+		time March 2016
+
+	section#summary
+		p #[span#lead Robots may one day rule the world], but what is a robot-ruled Earth like?
+		p.
+			Many think the first truly smart robots will be brain emulations or #[b ems].
+			Scan a human brain, then run a model with the same connections on a fast computer,
+			and you have a robot brain, but recognizably human.
+		p.
+			Train an em to do some job and copy it a million times:
+			an army of workers is at your disposal.
+			When they can be made cheaply, within perhaps a century,
+			ems will displace humans in most jobs.
+			In this new economic era, the world economy may double in size every few weeks.
+		p.
+			Some say we can't know the future,
+			especially following such a disruptive new technology,
+			but Professor Robin Hanson sets out to prove them wrong.
+			Applying decades of expertise in physics, computer science, and economics,
+			he uses standard theories to paint a detailed picture of a world dominated by ems.
+		p.
+			While human lives don't change greatly in the em era,
+			em lives are as different from ours as our lives are from those of our farmer and forager ancestors.
+			Ems make us question common assumptions of moral progress,
+			because they reject many of the values we hold dear.
+		p.
+			Read about em mind speeds, body sizes, job training and career paths,
+			energy use and cooling infrastructure, virtual reality, aging and retirement,
+			death and immortality, security, wealth inequality, religion, teleportation, identity, cities,
+			politics, law, war, status, friendship and love.
+		p.
+			This book shows you just how strange your descendants may be,
+			though ems are no stranger than we would appear to our ancestors.
+			To most ems, it seems good to be an em.
+
+	section.video
+		iframe(
+			frameborder='0' allowfullscreen
+			src='https://www.youtube.com/embed/9qcIsjrHENU')
+
+	section#author
+		p.
+			#[span#name Robin Hanson] is associate professor of economics at
+			#[a(href='https://gmu.edu') George Mason University],
+			and research associate at the
+			#[a(href='https://www.fhi.ox.ac.uk') Future of Humanity Institute] of Oxford University.
+			He has a doctorate in social science from
+			#[a(href='https://caltech.edu') California Institute of Technology],
+			master's degrees in physics and philosophy from the
+			#[a(href='https://uchicago.edu') University of Chicago],
+			and nine years experience as a research programmer, at
+			#[a(href='http://lockheedmartin.com') Lockheed] and #[a(href='https://nasa.gov') NASA].
+			He has 2800 citations, 60 publications, 420 media mentions,
+			and he blogs at #[a(href='http://overcomingbias.com') OvercomingBias].
+		p More on Prof. Hanson #[a(href='http://hanson.gmu.edu/bio') here].
+
+	section#toc
+		header Tentative Table of Contents
+
+		mixin cptr(name, ...sectionNames)
+			li
+				header= name
+				ol.chapter-sections
+					each sectionName in sectionNames
+						li= sectionName
+
+		ol.sections
+			li
+				header Basics
+				ol.chapters
+					+cptr('Start', 'Contents', 'Preface', 'Introduction', 'Overview', 'Summary')
+					+cptr('Eras', 'Precedents', 'Prior Eras', 'Our Era', 'Era Values', 'Dreamtime', 'Limits')
+					+cptr('Framing', 'Motivation', 'Forecasting', 'Scenarios', 'Consensus', 'Scope', 'Biases')
+					+cptr('Assumptions', 'Brains', 'Emulations', 'Complexity', 'Artificial Intelligence')
+					+cptr('Implementation', 'Mindreading', 'Hardware', 'Security', 'Parallelism')
+			li
+				header Physics
+				ol.chapters
+					+cptr('Scales', 'Speeds', 'Bodies', 'Lilliput', 'Meetings', 'Entropy', 'Miserly Minds')
+					+cptr('Infrastructure', 'Climate', 'Cooling', 'Air & Water', 'Buildings', 'Manufacturing')
+					+cptr('Appearances', 'Virtual Reality', 'Comfort', 'Shared Spaces', 'Merging Real & Virtual')
+					+cptr('Information', 'Views', 'Records', 'Fakery', 'Simulations')
+					+cptr('Existence', 'Copying', 'Rights', 'Many Ems', 'Surveillance')
+					+cptr('Farewells', 'Fragility', 'Retirement', 'Ghosts', 'Ways To End', 'Defining Death', 'Suicide')
+			li
+				header Economics
+				ol.chapters
+					+cptr('Labor', 'Supply & Demand', 'Malthusian Wages', 'First Ems', 'Selection', 'Enough Entrants')
+					+cptr('Efficiency', 'Clan Concentration', 'Competition', 'Efficiency', 'Eliteness', 'Qualities')
+					+cptr('Work', 'Work Hours', 'Spurs', 'Spur Uses', 'Social Power')
+					+cptr('Business', 'Institutions', 'New Institutions', 'Combinatorial Auctions', 'Prediction Markets')
+					+cptr('Growth', 'Faster Growth', 'Growth Estimate', 'Growth Myths', 'Finance')
+					+cptr('Lifecycle', 'Careers', 'Peak Age', 'Maturity', 'Preparation', 'Training', 'Childhood')
+			li
+				header Organization
+				ol.chapters
+					+cptr('Clumping', 'Cities', 'City Structure', 'City Auctions', 'Choosing', 'Speed', 'Transport')
+					+cptr('Groups', 'Clans', 'Managing Clans', 'Firms', 'Firm-Clan Relations', 'Teams', 'Mass vs. Niche Teams')
+					+cptr('Conflict', 'Inequality', 'Em Inequality', 'Redistribution', 'War', 'Nepotism', 'Fake Experts')
+					+cptr('Politics', 'Status', 'Governance', 'Clan Governance', 'Democracy', 'Coalitions', 'Curbing Coalitions')
+					+cptr('Rules', 'Law', 'Efficient Law', 'Innovation', 'Software', 'Lone Developers')
+			li
+				header Sociology
+				ol.chapters
+					+cptr('Mating', 'Sexuality', 'Open Source Lovers', 'Pair-Bonds', 'Gender', 'Gender Imbalance')
+					+cptr('Signals', 'Showing Off', 'Personal Signals', 'Group Signals', 'Charity', 'Identity', 'Copy Identity')
+					+cptr('Collaboration', 'Ritual', 'Religion', 'Swearing', 'Conversation', 'On Call Advice', 'Synchronization')
+					+cptr('Society', 'Culture', 'Divisions', 'Farmer-Like', 'Travel', 'Stories', 'Clan Stories')
+					+cptr('Minds', 'Humans', 'Unhumans', 'Partial Minds', 'Psychology', 'Intelligence', 'Intelligence Explosion')
+			li
+				header Implications
+				ol.chapters
+					+cptr('Variations', 'Trends', 'Alternatives', 'Transition', 'Enabling Technologies', 'Aliens')
+					+cptr('Choices', 'Evaluation', 'Quality of Life', 'Policy', 'Charity', 'Success')
+					+cptr('Finale', 'Critics', 'Conclusion', 'Thanks')
+					+cptr('References')

@@ -1,0 +1,89 @@
+@require 'assets/style/lib'
+
+#cover
+	display block
+	margin-left auto
+	margin-right auto
+	height 60vmin
+	min-height 440px
+	shad = 0.25rem
+	box-shadow shad shad (shad * 2) #0
+
+#publisher
+	margin-top 0.5em
+	margin-bottom -1em
+	text-align center
+
+	font-size 120%
+	font-style italic
+
+	time
+		font-weight bold
+
+main
+	#summary
+		#lead
+			font-size 120%
+			font-weight bold
+
+	.video
+		background none
+		margin-left auto
+		margin-right auto
+
+		max-width 560px
+		height 315px
+
+		iframe
+			width 100%
+			height 100%
+			margin-left auto
+			margin-right auto
+
+	#author
+		#name
+			font-weight bold
+			font-size 120%
+
+	#toc
+		.sections
+			counter-reset chapter
+
+			color #6 // This only affects list-style-type
+			list-style-type upper-roman
+			padding-left 1em
+
+			> li
+				margin 1em 0
+				> header
+					color #000
+					font-size 115%
+
+			.chapters
+				padding 0
+				list-style-type none
+
+				> li:before
+					display inline-block
+					color #a
+					width 1.5em
+					counter-increment chapter
+					content counter(chapter)
+
+				header
+					display inline-block
+					color #004
+					width 6em
+
+				ol.chapter-sections // letters, and on a single line
+					color #0
+					display inline-block
+
+					li
+						display inline-block
+						&:after
+							content "·"
+							margin 0 0.25em
+							color #8
+						&:last-child:after
+							content none
