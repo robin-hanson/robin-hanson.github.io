@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 body {
-  background: repeating-linear-gradient(45deg, rgba(153,153,119,0.533), rgba(153,153,119,0.533) 0.15rem, rgba(119,119,153,0.533) 0.15rem, rgba(119,119,153,0.533) 0.3rem);
+  background: repeating-linear-gradient(0, #567, #567 1rem, #586878 1rem, #586878 2rem);
 }
 body > header #cover {
   height: 60vmin;
