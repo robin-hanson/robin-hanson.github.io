@@ -1,0 +1,22 @@
+.talk {
+  margin: 1em 0;
+}
+.talk .title {
+  font-family: Prata;
+}
+.talk .event {
+  display: inline-block;
+  color: #888;
+}
+.talk .event::after {
+  content: ",";
+}
+.talk .place {
+  margin-left: 0.5em;
+  display: inline-block;
+  color: #888;
+}
+.talk time {
+  display: block;
+  color: #444;
+}

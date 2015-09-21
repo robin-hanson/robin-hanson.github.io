@@ -1,0 +1,63 @@
+@import 'https://fonts.googleapis.com/css?family=Vollkorn|Prata';
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Vollkorn;
+}
+a {
+  color: #004;
+  font-weight: bold;
+  text-decoration: none;
+}
+aside {
+  color: #888;
+}
+aside::before {
+  content: '(';
+}
+aside::after {
+  content: ')';
+}
+body {
+  background: repeating-linear-gradient(0deg, #567, #567 1rem, #586878 1rem, #586878 2rem);
+}
+body > header {
+  text-align: center;
+  margin-bottom: 1em;
+}
+body > header nav {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+body > header nav a {
+  font-family: Prata;
+  margin: 0 1em;
+}
+main {
+  margin: 0 1em;
+}
+main header {
+  font-family: Prata;
+  color: #008;
+}
+main section {
+  margin-top: 2em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding: 0.5em 1em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+main section > header {
+  font-size: 125%;
+}
+main section:first-child {
+  margin-top: 0;
+}

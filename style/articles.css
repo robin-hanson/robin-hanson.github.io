@@ -1,0 +1,28 @@
+.article {
+  margin: 1em 0;
+}
+.article .title {
+  display: block;
+  font-family: Prata;
+}
+.article .publisher {
+  font-style: italic;
+}
+.article .publisher .pages {
+  margin-left: 1em;
+  display: inline-block;
+  color: #444;
+}
+.article .publisher .pages::before {
+  content: 'pp. ';
+}
+.article .editor {
+  color: #444;
+}
+.article .editor::before {
+  content: 'edited by:';
+  margin-right: 1em;
+}
+.article time {
+  color: #444;
+}
