@@ -20,7 +20,7 @@ aside::after {
   content: ')';
 }
 body {
-  background: repeating-linear-gradient(0deg, #567, #567 1rem, #586878 1rem, #586878 2rem);
+  background: repeating-linear-gradient(0deg, #345, #345 1rem, #384858 1rem, #384858 2rem);
 }
 body > header {
   text-align: center;
@@ -37,6 +37,10 @@ body > header nav {
 body > header nav a {
   font-family: Prata;
   margin: 0 1em;
+}
+body > header nav .fa {
+  font-size: 135%;
+  margin: 0;
 }
 main {
   margin: 0 1em;

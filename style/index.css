@@ -4,13 +4,18 @@
   margin-right: auto;
   height: 60vmin;
   min-height: 440px;
+  box-shadow: 0.25rem 0.25rem 0.5rem #000;
 }
 #publisher {
-  text-align: center;
-  font-style: italic;
-  font-size: 120%;
   margin-top: 0.5em;
   margin-bottom: -1em;
+  text-align: center;
+  color: #fff;
+  font-size: 120%;
+  font-style: italic;
+}
+#publisher a {
+  color: #ffc;
 }
 #publisher time {
   font-weight: bold;
