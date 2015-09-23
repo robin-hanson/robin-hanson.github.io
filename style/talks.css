@@ -11,6 +11,9 @@
 .talk .event::after {
   content: ",";
 }
+.talk .event a {
+  color: #66c;
+}
 .talk .place {
   margin-left: 0.5em;
   display: inline-block;
