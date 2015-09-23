@@ -20,7 +20,7 @@ aside::after {
   content: ')';
 }
 body {
-  background: repeating-linear-gradient(0deg, #345, #345 1rem, #384858 1rem, #384858 2rem);
+  background: repeating-linear-gradient(0deg, #cde, #cde 1rem, #c8d8e8 1rem, #c8d8e8 2rem);
 }
 body > header {
   text-align: center;

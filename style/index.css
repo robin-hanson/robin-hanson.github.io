@@ -10,12 +10,8 @@
   margin-top: 0.5em;
   margin-bottom: -1em;
   text-align: center;
-  color: #fff;
   font-size: 120%;
   font-style: italic;
-}
-#publisher a {
-  color: #ffc;
 }
 #publisher time {
   font-weight: bold;
