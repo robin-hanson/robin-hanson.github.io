@@ -8,13 +8,23 @@
 }
 #publisher {
   margin-top: 0.5em;
-  margin-bottom: -1em;
   text-align: center;
   font-size: 120%;
   font-style: italic;
 }
 #publisher time {
   font-weight: bold;
+}
+#cover-explain {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+}
+#cover-explain a {
+  color: #448;
+}
+main #summary {
+  margin-top: 0;
 }
 main #summary #lead {
   font-size: 120%;
