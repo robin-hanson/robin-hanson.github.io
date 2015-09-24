@@ -4,10 +4,16 @@ block head
 	link(rel='stylesheet' type='text/css' href='style/index.css')
 block content
 	img#cover(src='cover.jpg' alt='Cover Image')
+
 	#publisher
 		a(href='https://www.ox.ac.uk') Oxford University Press
 		= ', '
 		time March 2016
+
+	#cover-explain.
+		(Cover image is
+		#[a(href='http://www.framebox.com/creations/habitat') Habitat]
+		by Till Nowak)
 
 	section#summary
 		p #[span#lead Robots may one day rule the world], but what is a robot-ruled Earth like?
