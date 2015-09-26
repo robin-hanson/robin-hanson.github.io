@@ -1,19 +1,22 @@
-extends layout
+extends _layout
 block head
 	title The Age of Em, A Book
-	link(rel='stylesheet' type='text/css' href='style/index.css')
+	link(rel='stylesheet' href='style/index.css')
 block content
-	img#cover(src='cover.jpg' alt='Cover Image')
+	#cover
+		a(href='cover.jpg') #[img(src='cover.jpg' alt='Cover Image')]
 
-	#publisher
-		a(href='https://www.ox.ac.uk') Oxford University Press
-		= ', '
-		time March 2016
-
-	#cover-explain.
-		(Cover image is
-		#[a(href='http://www.framebox.com/creations/habitat') Habitat]
-		by Till Nowak)
+	#description
+		#title.
+			The Age of Em: Work, Love and Life when Robots Rule the Earth
+		#publisher
+			a(href='//ukcatalogue.oup.com/product/9780198754626.do') Oxford University Press
+			= ', '
+			time March 2016
+		#cover-explain.
+			(Cover image:
+			#[a(href='//www.framebox.com/creations/habitat') Habitat]
+			by Till Nowak)
 
 	section#summary
 		p #[span#lead Robots may one day rule the world], but what is a robot-ruled Earth like?
@@ -47,27 +50,27 @@ block content
 			This book shows you just how strange your descendants may be,
 			though ems are no stranger than we would appear to our ancestors.
 			To most ems, it seems good to be an em.
+		p
+			a(href='#{amazonUrl}') View on amazon
 
 	section.video
-		iframe(
-			frameborder='0' allowfullscreen
-			src='https://www.youtube.com/embed/9qcIsjrHENU')
+		iframe(frameborder='0' allowfullscreen src='//www.youtube.com/embed/9qcIsjrHENU')
 
 	section#author
 		p.
-			#[span#name Robin Hanson] is associate professor of economics at
-			#[a(href='https://gmu.edu') George Mason University],
+			#[a#name(href='//robinhanson.com') Robin Hanson] is associate professor of economics at
+			#[a(href='//gmu.edu') George Mason University],
 			and research associate at the
-			#[a(href='https://www.fhi.ox.ac.uk') Future of Humanity Institute] of Oxford University.
+			#[a(href='//www.fhi.ox.ac.uk') Future of Humanity Institute] of Oxford University.
 			He has a doctorate in social science from
-			#[a(href='https://caltech.edu') California Institute of Technology],
+			#[a(href='//caltech.edu') California Institute of Technology],
 			master's degrees in physics and philosophy from the
-			#[a(href='https://uchicago.edu') University of Chicago],
+			#[a(href='//uchicago.edu') University of Chicago],
 			and nine years experience as a research programmer, at
-			#[a(href='http://lockheedmartin.com') Lockheed] and #[a(href='https://nasa.gov') NASA].
+			#[a(href='//lockheedmartin.com') Lockheed] and #[a(href='//nasa.gov') NASA].
 			He has 2800 citations, 60 publications, 420 media mentions,
-			and he blogs at #[a(href='http://overcomingbias.com') OvercomingBias].
-		p More on Prof. Hanson #[a(href='http://hanson.gmu.edu/bio') here].
+			and he blogs at #[a(href='//overcomingbias.com') OvercomingBias].
+		p More on Prof. Hanson #[a(href='//hanson.gmu.edu/bio') here].
 
 	section#toc
 		header Tentative Table of Contents

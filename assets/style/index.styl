@@ -1,31 +1,32 @@
-@require 'assets/style/lib'
+@require '_lib'
+
+body > header
+	margin-bottom 0.5em
 
 #cover
-	display block
-	margin-left auto
-	margin-right auto
-	height 60vmin
-	min-height 440px
-	shad = 0.25rem
-	box-shadow shad shad (shad * 2) #0
-
-#publisher
-	margin-top 0.5em
 	text-align center
+	img
+		height 60vmin
+		min-height 440px
+		shad = 0.25rem
+		box-shadow shad shad (shad * 2) #0
 
-	font-size 120%
-	font-style italic
-
-	time
-		font-weight bold
-
-#cover-explain
-	color #8
-	font-style italic
+#description
 	text-align center
+	#title, #publisher
+		font-size 120%
 
-	a
-		color #448
+	#publisher
+		font-style italic
+
+	#cover-explain
+		color #8
+		font-style italic
+
+		a
+			color #448
+
+	margin 0.75em 0
 
 main
 	#summary

@@ -1,10 +1,10 @@
 {
 	"private": true,
+	"scripts": {"start": "dum serve"},
 	"devDependencies": {
-		"broccoli": "0.16.8",
-		"broccoli-funnel": "0.2.8",
-		"broccoli-jade": "1.0.1",
-		"broccoli-merge-trees": "0.2.3",
-		"broccoli-stylus": "3.0.0"
-	}
+		"dum": "dum-build/dum",
+		"jstransformer-jade": "0.1.0",
+		"jstransformer-stylus": "1.0.0"
+	},
+	"license": "WTFPL"
 }
