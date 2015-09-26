@@ -1,3 +1,6 @@
+body > header {
+  margin-bottom: 0.5em;
+}
 #cover {
   display: block;
   margin-left: auto;
@@ -6,21 +9,22 @@
   min-height: 440px;
   box-shadow: 0.25rem 0.25rem 0.5rem #000;
 }
-#publisher {
-  margin-top: 0.5em;
+#description {
   text-align: center;
+  margin: 0.75em 0;
+}
+#description #title,
+#description #publisher {
   font-size: 120%;
+}
+#description #publisher {
   font-style: italic;
 }
-#publisher time {
-  font-weight: bold;
-}
-#cover-explain {
+#description #cover-explain {
   color: #888;
   font-style: italic;
-  text-align: center;
 }
-#cover-explain a {
+#description #cover-explain a {
   color: #448;
 }
 main #summary {
