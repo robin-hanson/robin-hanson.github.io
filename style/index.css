@@ -2,9 +2,9 @@ body > header {
   margin-bottom: 0.5em;
 }
 #cover {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+}
+#cover img {
   height: 60vmin;
   min-height: 440px;
   box-shadow: 0.25rem 0.25rem 0.5rem #000;
