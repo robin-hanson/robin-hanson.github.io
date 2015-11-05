@@ -1,21 +1,18 @@
 .talk {
   margin: 1em 0;
 }
-.talk .title {
-  font-family: Prata;
-}
 .talk .event {
+  font-family: Prata;
   display: inline-block;
-  color: #888;
+  margin-right: 0.5em;
 }
 .talk .event::after {
   content: ",";
 }
 .talk .event a {
-  color: #66c;
+  color: #44f;
 }
 .talk .place {
-  margin-left: 0.5em;
   display: inline-block;
   color: #888;
 }

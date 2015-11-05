@@ -34,6 +34,13 @@ main #summary #lead {
   font-size: 120%;
   font-weight: bold;
 }
+main #summary #preorder {
+  text-align: center;
+}
+main #summary #preorder #main {
+  text-align: center;
+  font-size: 150%;
+}
 main .video {
   background: none;
   margin-left: auto;
@@ -80,18 +87,21 @@ main #toc .sections .chapters header {
   color: #004;
   width: 6em;
 }
-main #toc .sections .chapters ol.chapter-sections {
+main #toc ol.chapter-sections {
   color: #000;
   display: inline-block;
 }
-main #toc .sections .chapters ol.chapter-sections li {
+main #toc ol.chapter-sections li {
   display: inline-block;
 }
-main #toc .sections .chapters ol.chapter-sections li:after {
+main #toc ol.chapter-sections li:after {
   content: "·";
   margin: 0 0.25em;
   color: #888;
 }
-main #toc .sections .chapters ol.chapter-sections li:last-child:after {
+main #toc ol.chapter-sections li:last-child:after {
   content: none;
+}
+main #toc ol.chapter-sections.nochapter {
+  padding: 0;
 }
