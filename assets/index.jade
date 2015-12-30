@@ -76,7 +76,7 @@ block content
 		p More on Prof. Hanson #[a(href='//hanson.gmu.edu/bio') here].
 
 	section#toc
-		header Tentative Table of Contents
+		header Table of Contents
 
 		mixin cptr(name, ...sectionNames)
 			li
@@ -86,10 +86,13 @@ block content
 						li= sectionName
 
 		ol.sections
+			ol.chapter-sections.nochapter
+				li Preface
+				li Introduction
 			li
 				header Basics
 				ol.chapters
-					+cptr('Start', 'Contents', 'Preface', 'Introduction', 'Overview', 'Summary')
+					+cptr('Start', 'Overview', 'Summary')
 					+cptr('Eras', 'Precedents', 'Prior Eras', 'Our Era', 'Era Values', 'Dreamtime', 'Limits')
 					+cptr('Framing', 'Motivation', 'Forecasting', 'Scenarios', 'Consensus', 'Scope', 'Biases')
 					+cptr('Assumptions', 'Brains', 'Emulations', 'Complexity', 'Artificial Intelligence')

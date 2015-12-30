@@ -92,15 +92,18 @@ main
 					color #004
 					width 6em
 
-				ol.chapter-sections // letters, and on a single line
-					color #0
-					display inline-block
+		ol.chapter-sections // letters, and on a single line
+			color #0
+			display inline-block
 
-					li
-						display inline-block
-						&:after
-							content "·"
-							margin 0 0.25em
-							color #8
-						&:last-child:after
-							content none
+			li
+				display inline-block
+				&:after
+					content "·"
+					margin 0 0.25em
+					color #8
+				&:last-child:after
+					content none
+
+			&.nochapter
+				padding 0
