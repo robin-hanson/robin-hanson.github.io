@@ -1,0 +1,17 @@
+.media {
+  margin: 1em 0;
+}
+.media .title {
+  font-family: Prata;
+}
+.media .title a {
+  color: #44f;
+}
+.media .publication {
+  display: inline-block;
+  color: #888;
+}
+.media time {
+  display: block;
+  color: #444;
+}
