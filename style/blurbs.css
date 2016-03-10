@@ -1,0 +1,24 @@
+.blurb {
+  margin: 1em 0;
+}
+.blurb blockquote {
+  margin: 0;
+}
+.blurb .who::before {
+  content: "—";
+}
+.blurb .who .name {
+  font-family: Prata;
+  font-weight: bold;
+  display: inline;
+  margin-right: 0.5em;
+  color: #008;
+}
+.blurb .who .name::after {
+  content: ",";
+}
+.blurb .who .desc {
+  display: inline;
+  font-size: 85%;
+  color: #444;
+}
