@@ -1,0 +1,24 @@
+@require '_lib'
+
+.blurb
+	margin 1em 0
+
+	blockquote
+		margin 0
+
+	.who
+		&::before
+			content "—"
+
+		.name
+			font-head()
+			font-weight bold
+			display inline
+			margin-right 0.5em
+			color #008
+			&::after
+				content ","
+		.desc
+			display inline
+			font-size 85%
+			color #4
