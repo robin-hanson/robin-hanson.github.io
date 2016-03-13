@@ -4,7 +4,7 @@ block head
 	link(rel='stylesheet' href='style/index.css')
 block content
 	#cover
-		a(href='cover.jpg') #[img(src='cover.jpg' alt='Cover Image')]
+		a(href='cover.jpg') #[img(title='Cover' src='cover.jpg')]
 
 	#description
 		#title.
@@ -14,7 +14,7 @@ block content
 			= ', '
 			time 1 June 2016
 		#cover-explain.
-			(Cover image:
+			(See #[a(href='//www.dropbox.com/s/byju7rwqdqzzx80/hanson_hb.pdf?dl=1') full cover]. Cover image:
 			#[a(href='//www.framebox.com/creations/habitat') Habitat]
 			by Till Nowak)
 
@@ -54,7 +54,7 @@ block content
 		#preorder
 			#main
 				a(href='#{amazonUrl}') Preorder on Amazon
-			a(href='#{barnesUrl}') (Also on Barnes & Noble)
+			div (Also on #[a(href='#{barnesUrl}') Barnes & Noble] and #[a(href='#{oupUrl}') Oxford University Press])
 			div.
 				#[a(href='//audible.com') Audible] and Amazon Kindle versions are coming.
 
