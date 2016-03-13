@@ -4,10 +4,6 @@
 .talk .event {
   font-family: Prata;
   display: inline-block;
-  margin-right: 0.5em;
-}
-.talk .event::after {
-  content: ",";
 }
 .talk .event a {
   color: #44f;
@@ -15,6 +11,9 @@
 .talk .place {
   display: inline-block;
   color: #888;
+}
+.talk .place::before {
+  content: ", ";
 }
 .talk time {
   display: block;
