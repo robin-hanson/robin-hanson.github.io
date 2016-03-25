@@ -2,6 +2,7 @@
 
 Install [node.js](https://nodejs.org).
 
-	npm install -g broccoli-cli
-	broccoli build public
-	# Or: broccoli serve
+	npm install
+	npm install -g bower
+	bower install
+	npm start
