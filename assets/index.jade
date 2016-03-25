@@ -1,3 +1,5 @@
+include _chapters
+
 extends _layout
 block head
 	title The Age of Em, A Book
@@ -84,65 +86,4 @@ block content
 
 	section#toc
 		header Table of Contents
-
-		mixin cptr(name, ...sectionNames)
-			li
-				header= name
-				ol.chapter-sections
-					each sectionName in sectionNames
-						li= sectionName
-
-		ol.sections
-			ol.chapter-sections.nochapter
-				li Preface
-				li Acknowledgements
-				li Introduction
-			li
-				header Basics
-				ol.chapters
-					+cptr('Start', 'Overview', 'Summary')
-					+cptr('Eras', 'Precedents', 'Prior Eras', 'Our Era', 'Era Values', 'Dreamtime', 'Limits')
-					+cptr('Framing', 'Motivation', 'Forecasting', 'Scenarios', 'Consensus', 'Scope', 'Biases')
-					+cptr('Assumptions', 'Brains', 'Emulations', 'Complexity', 'Artificial Intelligence')
-					+cptr('Implementation', 'Mindreading', 'Hardware', 'Security', 'Parallelism')
-			li
-				header Physics
-				ol.chapters
-					+cptr('Scales', 'Speeds', 'Bodies', 'Lilliput', 'Meetings', 'Entropy', 'Miserly Minds')
-					+cptr('Infrastructure', 'Climate', 'Cooling', 'Air & Water', 'Buildings', 'Manufacturing')
-					+cptr('Appearances', 'Virtual Reality', 'Comfort', 'Shared Spaces', 'Merging Real & Virtual')
-					+cptr('Information', 'Views', 'Records', 'Fakery', 'Simulations')
-					+cptr('Existence', 'Copying', 'Rights', 'Many Ems', 'Surveillance')
-					+cptr('Farewells', 'Fragility', 'Retirement', 'Ghosts', 'Ways To End', 'Defining Death', 'Suicide')
-			li
-				header Economics
-				ol.chapters
-					+cptr('Labor', 'Supply & Demand', 'Malthusian Wages', 'First Ems', 'Selection', 'Enough Entrants')
-					+cptr('Efficiency', 'Clan Concentration', 'Competition', 'Efficiency', 'Eliteness', 'Qualities')
-					+cptr('Work', 'Work Hours', 'Spurs', 'Spur Uses', 'Social Power')
-					+cptr('Business', 'Institutions', 'New Institutions', 'Combinatorial Auctions', 'Prediction Markets')
-					+cptr('Growth', 'Faster Growth', 'Growth Estimate', 'Growth Myths', 'Finance')
-					+cptr('Lifecycle', 'Careers', 'Peak Age', 'Maturity', 'Preparation', 'Training', 'Childhood')
-			li
-				header Organization
-				ol.chapters
-					+cptr('Clumping', 'Cities', 'City Structure', 'City Auctions', 'Choosing', 'Speed', 'Transport')
-					+cptr('Groups', 'Clans', 'Managing Clans', 'Firms', 'Firm-Clan Relations', 'Teams', 'Mass vs. Niche Teams')
-					+cptr('Conflict', 'Inequality', 'Em Inequality', 'Redistribution', 'War', 'Nepotism', 'Fake Experts')
-					+cptr('Politics', 'Status', 'Governance', 'Clan Governance', 'Democracy', 'Coalitions', 'Curbing Coalitions')
-					+cptr('Rules', 'Law', 'Efficient Law', 'Innovation', 'Software', 'Lone Developers')
-			li
-				header Sociology
-				ol.chapters
-					+cptr('Mating', 'Sexuality', 'Open Source Lovers', 'Pair-Bonds', 'Gender', 'Gender Imbalance')
-					+cptr('Signals', 'Showing Off', 'Personal Signals', 'Group Signals', 'Charity', 'Identity', 'Copy Identity')
-					+cptr('Collaboration', 'Ritual', 'Religion', 'Swearing', 'Conversation', 'On Call Advice', 'Synchronization')
-					+cptr('Society', 'Culture', 'Divisions', 'Farmer-Like', 'Travel', 'Stories', 'Clan Stories')
-					+cptr('Minds', 'Humans', 'Unhumans', 'Partial Minds', 'Psychology', 'Intelligence', 'Intelligence Explosion')
-			li
-				header Implications
-				ol.chapters
-					+cptr('Variations', 'Trends', 'Alternatives', 'Transition', 'Enabling Technologies', 'Aliens')
-					+cptr('Choices', 'Evaluation', 'Quality of Life', 'Policy', 'Charity', 'Success')
-					+cptr('Finale', 'Critics', 'Conclusion')
-					+cptr('References')
+		+chapters()

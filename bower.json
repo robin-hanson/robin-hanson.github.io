@@ -1,0 +1,6 @@
+{
+	"name": "ageofem.com",
+	"dependencies": {
+		"details-shim": "tyleruebele/details-shim"
+	}
+}
