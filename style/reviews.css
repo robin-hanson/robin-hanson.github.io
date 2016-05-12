@@ -1,0 +1,57 @@
+.review {
+  margin: 1em 0;
+/*
+	.event
+		font-head()
+		display inline-block
+		a
+			color #44f
+
+	.place
+		display inline-block
+		color #8
+		
+		&::before
+			content ", "
+
+	time
+		display block
+		color #4
+	*/
+}
+.review quote {
+  font-family: Courgette;
+  font-size: 125%;
+  display: block;
+}
+.review quote > a {
+  font-weight: normal;
+}
+.review quote::before {
+  content: '“';
+  color: #888;
+}
+.review quote::after {
+  content: '”';
+  color: #888;
+}
+.review .who {
+  display: inline-block;
+  font-weight: bold;
+}
+.review .who::after {
+  content: ",";
+  color: #888;
+  margin-right: 0.5em;
+}
+.review .publication {
+  display: inline-block;
+}
+.review .publication::after {
+  content: ",";
+  color: #888;
+  margin-right: 0.5em;
+}
+.review time {
+  display: inline-block;
+}
