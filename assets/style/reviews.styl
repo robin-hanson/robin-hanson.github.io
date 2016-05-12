@@ -1,0 +1,37 @@
+@require '_lib'
+
+comma()
+	content ","
+	color #8
+	margin-right 0.5em
+
+.review
+	margin 1em 0
+	
+	quote
+		font-quote()
+		font-size 125%
+		display block
+		> a
+			font-weight normal
+		
+		&::before
+			content '“'
+			color #8
+		&::after
+			content '”'
+			color #8
+
+	.who
+		display inline-block
+		font-weight bold
+		&::after
+			comma()
+
+	.publication
+		display inline-block
+		&::after
+			comma()
+			
+	time
+		display inline-block
