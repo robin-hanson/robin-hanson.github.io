@@ -1,23 +1,5 @@
 .review {
   margin: 1em 0;
-/*
-	.event
-		font-head()
-		display inline-block
-		a
-			color #44f
-
-	.place
-		display inline-block
-		color #8
-		
-		&::before
-			content ", "
-
-	time
-		display block
-		color #4
-	*/
 }
 .review quote {
   font-family: Courgette;
