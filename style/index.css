@@ -10,18 +10,21 @@ body > header {
   box-shadow: 0.25rem 0.25rem 0.5rem #000;
 }
 #description {
-  text-align: center;
   margin: 0.75em 0;
+  text-align: center;
 }
 #description #title,
 #description #publisher {
   font-size: 120%;
 }
+#description #title {
+  font-weight: bold;
+}
 #description #publisher {
   font-style: italic;
 }
 #description #cover-explain {
-  color: #888;
+  color: #666;
   font-style: italic;
 }
 #description #cover-explain a {
