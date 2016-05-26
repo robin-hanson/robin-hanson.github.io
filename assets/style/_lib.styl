@@ -2,11 +2,16 @@ border-radius-bottom(val)
 	border-bottom-left-radius val
 	border-bottom-right-radius val
 
+font-name-head = Prata
 font-head()
-	font-family Prata
+	font-family font-name-head
 
+font-name-text = Vollkorn
 font-text()
-	font-family Vollkorn
+	font-family font-name-text
 
+font-name-quote = Simonetta
 font-quote()
-	font-family Simonetta
+	font-family font-name-quote
+
+font-names = font-name-head + '|' + font-name-text + '|' + font-name-quote

@@ -12,21 +12,26 @@ body > header
 		box-shadow shad shad (shad * 2) #0
 
 #description
+	margin 0.75em 0
+
 	text-align center
+
 	#title, #publisher
 		font-size 120%
+
+	#title
+		font-weight bold
 
 	#publisher
 		font-style italic
 
 	#cover-explain
-		color #8
+		color #6
 		font-style italic
 
 		a
 			color #448
 
-	margin 0.75em 0
 
 main
 	#summary
@@ -97,20 +102,20 @@ main
 		details
 			display inline-block
 			margin-left 2em
-			
+
 			> summary
 				cursor pointer
 			> div
 				color #0
 				margin 0.5em 2em
-			
+
 			&.nochapter
 				margin-left 0
 
 		ol.chapter-sections // letters, and on a single line
 			color #0
 			display inline-block
-			
+
 			padding 0
 
 			li
