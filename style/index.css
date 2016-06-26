@@ -38,12 +38,19 @@ main #summary #lead {
   font-size: 120%;
   font-weight: bold;
 }
-main #summary #preorder {
+main #summary #order {
   text-align: center;
 }
-main #summary #preorder #main {
+main #summary #order #main {
+  font-size: 150%;
+}
+main #summary #sample {
+  margin-top: 0.5em;
   text-align: center;
   font-size: 150%;
+}
+main #summary #sample a {
+  color: #c08;
 }
 main .video {
   background: none;
