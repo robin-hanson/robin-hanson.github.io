@@ -3,6 +3,38 @@
 body > header
 	margin-bottom 0.5em
 
+#top-reviews
+	max-width 40em
+	margin-left auto
+	margin-right auto
+
+	.review
+		font-size 90%
+
+		margin 0.5em
+
+		quote > a
+			font-weight normal
+			font-style italic
+			color #002
+			&::before
+				content '“'
+				font-style normal
+			&::after
+				content '” — '
+				font-style normal
+
+		.who
+			display inline-block
+			font-weight bold
+			&::after
+				content ","
+				color #8
+				margin-right 0.5em
+
+		.publication
+			display inline-block
+
 #cover
 	text-align center
 	img

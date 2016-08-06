@@ -1,4 +1,5 @@
 extends _layout
+include _common-reviews
 block head
 	title Reviews about The Age of Em
 	link(rel='stylesheet' href='style/reviews.css')
@@ -19,37 +20,27 @@ block content
 			time 2016 June 22
 		.review
 			quote
-				a(href='//turingchurch.com/2016/06/21/paradiso-and-inferno-in-robin-hansons-the-age-of-em') All futurists, transhumanists and citizens interested in possible futures radically different from today’s reality should read “The Age of Em.” .. I like “The Age of Em” a lot. .. Some readers will love the book, some will hate it, but nobody will remain indifferent.
+				a(href='//turingchurch.com/2016/06/21/paradiso-and-inferno-in-robin-hansons-the-age-of-em') All futurists, transhumanists and citizens interested in possible futures radically different from today’s reality should read “The Age of Em.” … I like “The Age of Em” a lot. … Some readers will love the book, some will hate it, but nobody will remain indifferent.
 			.who Giulio Prisco
 			.publication Turing Church
 			time 2016 June 21
 		.review
 			quote
-				a(href='//engtechmag.wordpress.com/2016/06/20/book-review-the-age-of-em-work-love-and-life-when-robots-rule-the-earth-robin-hanson') Hanson’s work is revolutionary, not in what it says, but how it attempts to say it. .. once over the peak, the expedition feels more than worthwhile.
+				a(href='//engtechmag.wordpress.com/2016/06/20/book-review-the-age-of-em-work-love-and-life-when-robots-rule-the-earth-robin-hanson') Hanson’s work is revolutionary, not in what it says, but how it attempts to say it. … once over the peak, the expedition feels more than worthwhile.
 			.who Jade Fell
 			.publication Engineering and Technology Magazine
 			time 2016 June 20
 		.review
 			quote
-				a(href='//crookedtimber.org/2016/06/19/the-age-of-em-wont-happen') I enjoyed the book .. enriching our sense of the range of possible futures that might be out there .. is the reason I got value from his book.
+				a(href='//crookedtimber.org/2016/06/19/the-age-of-em-wont-happen') I enjoyed the book … enriching our sense of the range of possible futures that might be out there … is the reason I got value from his book.
 			.who Henry Farrell
 			.publication Crooked Timber
 			time 2016 June 19
+		+guardian-review()
+		+wall-street-journal-review()
 		.review
 			quote
-				a(href='//theguardian.com/books/2016/jun/15/the-age-of-em-work-love-and-life-when-robots-rule-the-earth-robin-hanson-review') This hellish cyberworld is quite cool to think about in a dystopian Matrixy way. .. brilliantly weird extrapolations
-			.who Steven Poole
-			.publication The Guardian
-			time 2016 June 15
-		.review
-			quote
-				a(href='//www.wsj.com/articles/your-em-goes-to-bermuda-1465582648') What is remarkable .. is not just the detail .. but the way he situates it within a perceptive analysis of our human past and present.
-			.who Daniel Levitin
-			.publication Wall Street Journal
-			time 2016 June 10
-		.review
-			quote
-				a(href='//wimflyc.blogspot.com/2016/06/back-to-school.html') Lots of creative, intelligent people .. doing remarkable wonderful things with big expensive toys .. but you only got, personally, subsistence wages .. What it is like to be an Em is ... a graduate student.
+				a(href='//wimflyc.blogspot.com/2016/06/back-to-school.html') Lots of creative, intelligent people … doing remarkable wonderful things with big expensive toys … but you only got, personally, subsistence wages … What it is like to be an Em is … a graduate student.
 			.who Josh Storrs Hall
 			.publication Where is my Flying Car?
 			time 2016 June 10
@@ -61,13 +52,13 @@ block content
 			time 2016 June 9
 		.review
 			quote
-				a(href='//popsciencebooks.blogspot.com/2016/06/the-age-of-em-robin-hanson.html') There is no doubt that what Hanson is doing here is truly fascinating. .. any science fiction author worth his or her salt should be rushing out and  buying a copy of this book. There are enough ideas here to spark off a thousand stories.
+				a(href='//popsciencebooks.blogspot.com/2016/06/the-age-of-em-robin-hanson.html') There is no doubt that what Hanson is doing here is truly fascinating. … any science fiction author worth his or her salt should be rushing out and  buying a copy of this book. There are enough ideas here to spark off a thousand stories.
 			.who Brian Clegg
 			.publication Popular Science
 			time 2016 June 7
 		.review
 			quote
-				a(href='//blog.jessriedel.com/2016/06/06/comments-on-hansons-the-age-of-em') I highly recommend it. .. His language is always incredibly direct and clear. Hanson is an academic Hemingway.
+				a(href='//blog.jessriedel.com/2016/06/06/comments-on-hansons-the-age-of-em') I highly recommend it. … His language is always incredibly direct and clear. Hanson is an academic Hemingway.
 			.who Jess Riedel
 			.publication foreXiv
 			time 2016 June 6
@@ -85,13 +76,13 @@ block content
 			time 2016 June 3
 		.review
 			quote
-				a(href='//aleph.se/andart2/reviews/review-of-robin-hansons-the-age-of-em') The Age of Em is bound to be a classic. .. it is a gap in the mist clouds covering the future.
+				a(href='//aleph.se/andart2/reviews/review-of-robin-hansons-the-age-of-em') The Age of Em is bound to be a classic. … it is a gap in the mist clouds covering the future.
 			.who Anders Sandberg
 			.publication Andart II
 			time 2016 June 2
 		.review
 			quote
-				a(href='//slatestarcodex.com/2016/05/28/book-review-age-of-em') I can’t think of another book of this depth and quality in the same niche. .. I highly recommend Age of Em as a fantastically fun read and a great introduction to these concepts. It’s engaging, readable, and weird. I just don’t know if it’s weird enough.
+				a(href='//slatestarcodex.com/2016/05/28/book-review-age-of-em') I can’t think of another book of this depth and quality in the same niche. … I highly recommend Age of Em as a fantastically fun read and a great introduction to these concepts. It’s engaging, readable, and weird. I just don’t know if it’s weird enough.
 			.who Scott Alexander
 			.publication Slate Star Codex
 			time 2016 May 28
@@ -109,16 +100,11 @@ block content
 			time 2016 May 24
 		.review
 			quote
-				a(href='//profitsofchaos.com/2016/05/22/review-robin-hansons-age-of-em') The pacing is fast, chock-full of interesting ideas to play with .. Hanson has done a fantastic job sketching technologically and economically plausible outcomes to the future of humans and near-humans.
+				a(href='//profitsofchaos.com/2016/05/22/review-robin-hansons-age-of-em') The pacing is fast, chock-full of interesting ideas to play with … Hanson has done a fantastic job sketching technologically and economically plausible outcomes to the future of humans and near-humans.
 			.who Peter St Onge
 			.publication Profits of Chaos
 			time 2016 May 22
-		.review
-			quote
-				a(href='//next.ft.com/content/aafc21f0-0540-11e6-a70d-4e39ac32c284') Crammed full of such fascinating visions of an imagined future
-			.who Sarah O'Connor
-			.publication Financial Times
-			time 2016 May 9
+		+financial-times-review()
 		.review
 			quote
 				a(href='//marginalrevolution.com/marginalrevolution/2016/01/the-age-of-em.html') Very often Robin is describing our world in cloaked fashion … [It is] a reminder of how strange everything is. … I am wildly enthusiastic about everything the Robin upload does.

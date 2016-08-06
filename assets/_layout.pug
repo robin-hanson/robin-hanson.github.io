@@ -23,24 +23,27 @@ head
 body
 	header
 		nav
-			a(href='/')
-				i.fa.fa-home
-			a(href='./reviews') reviews
-			a(href='./blurbs') blurbs
-			a(href='./talks') talks
-			a(href='./media') media
-			a(href='./articles') articles
-			a(href='#{amazonUrl}')
-				img(title='Amazon' src='//amazon.com/favicon.ico')
-			a(href='#{playUrl}')
-				img(title='Google Play' src='//gstatic.com/android/market_images/web/favicon_v2.ico') 
-			a(href='#{barnesUrl}')
-				img(title='Barnes & Noble' src='//img.images-bn.com/static/img/favicon.ico')
-			a(href='#{oupUrl}')
-				img(title='Oxford University Press' src='//oup.com/academic/system/images/favicon.ico')
-			a(href='//www.facebook.com/robin.hanson.754')
-				img(title='Facebook' src='//facebook.com/favicon.ico')
-			a(href='//twitter.com/robinhanson')
-				img(title='Twitter' src='//twitter.com/favicon.ico')
+			div
+				a(href='/')
+					i.fa.fa-home
+				a(href='./reviews') reviews
+				a(href='./blurbs') blurbs
+				a(href='./talks') talks
+				a(href='./media') media
+				a(href='./articles') articles
+
+			div
+				a(href=amazonUrl)
+					img(title='Amazon' src='//amazon.com/favicon.ico')
+				a(href=playUrl)
+					img(title='Google Play' src='//gstatic.com/android/market_images/web/favicon_v2.ico')
+				a(href=barnesUrl)
+					img(title='Barnes & Noble' src='//img.images-bn.com/static/img/favicon.ico')
+				a(href=oupUrl)
+					img(title='Oxford University Press' src='//oup.com/academic/system/images/favicon.ico')
+				a(href='//www.facebook.com/robin.hanson.754')
+					img(title='Facebook' src='//facebook.com/favicon.ico')
+				a(href='//twitter.com/robinhanson')
+					img(title='Twitter' src='//twitter.com/favicon.ico')
 	main
 		block content

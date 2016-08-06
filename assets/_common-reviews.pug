@@ -1,0 +1,26 @@
+mixin guardian-review(includeTime=true)
+	.review
+		quote
+			a(href='//theguardian.com/books/2016/jun/15/the-age-of-em-work-love-and-life-when-robots-rule-the-earth-robin-hanson-review') This hellish cyberworld is quite cool to think about in a dystopian Matrixy way. … brilliantly weird extrapolations
+		.who Steven Poole
+		.publication The Guardian
+		if includeTime
+			time 2016 June 15
+
+mixin wall-street-journal-review(includeTime=true)
+	.review
+		quote
+			a(href='//www.wsj.com/articles/your-em-goes-to-bermuda-1465582648') What is remarkable … is not just the detail … but the way he situates it within a perceptive analysis of our human past and present.
+		.who Daniel Levitin
+		.publication Wall Street Journal
+		if includeTime
+			time 2016 June 10
+
+mixin financial-times-review(includeTime=true)
+	.review
+		quote
+			a(href='//next.ft.com/content/aafc21f0-0540-11e6-a70d-4e39ac32c284') Crammed full of such fascinating visions of an imagined future
+		.who Sarah O'Connor
+		.publication Financial Times
+		if includeTime
+			time 2016 May 9
