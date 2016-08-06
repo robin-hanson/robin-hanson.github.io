@@ -3,7 +3,7 @@
 	"scripts": {"start": "dum serve"},
 	"devDependencies": {
 		"dum": "dum-build/dum",
-		"jstransformer-jade": "0.1.0",
+		"jstransformer-pug": "0.2.1",
 		"jstransformer-stylus": "1.0.0"
 	}
 }
