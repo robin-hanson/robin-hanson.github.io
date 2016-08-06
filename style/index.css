@@ -1,6 +1,40 @@
 body > header {
   margin-bottom: 0.5em;
 }
+#top-reviews {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+}
+#top-reviews .review {
+  font-size: 90%;
+  margin: 0.5em;
+}
+#top-reviews .review quote > a {
+  font-weight: normal;
+  font-style: italic;
+  color: #002;
+}
+#top-reviews .review quote > a::before {
+  content: '“';
+  font-style: normal;
+}
+#top-reviews .review quote > a::after {
+  content: '” — ';
+  font-style: normal;
+}
+#top-reviews .review .who {
+  display: inline-block;
+  font-weight: bold;
+}
+#top-reviews .review .who::after {
+  content: ",";
+  color: #888;
+  margin-right: 0.5em;
+}
+#top-reviews .review .publication {
+  display: inline-block;
+}
 #cover {
   text-align: center;
 }

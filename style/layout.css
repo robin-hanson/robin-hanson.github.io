@@ -39,7 +39,7 @@ body > header > nav {
 }
 body > header > nav a {
   font-family: Prata;
-  margin: 0 1em;
+  margin: 0 0.5em;
   color: #004;
 }
 body > header > nav a > img {
