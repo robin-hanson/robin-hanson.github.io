@@ -1,6 +1,8 @@
 {
 	"private": true,
-	"scripts": {"start": "dum serve"},
+	"scripts": {
+		"start": "dum serve"
+	},
 	"devDependencies": {
 		"dum": "dum-build/dum",
 		"jstransformer-pug": "0.2.1",
